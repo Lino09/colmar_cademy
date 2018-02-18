@@ -1,0 +1,70 @@
+/* font-family: 'Almendra', serif;
+font-family: 'Delius', cursive;
+font-family: 'Cabin', sans-serif; */
+html{
+  font-size: 20px;
+  font-family: 'Delius', cursive;
+}
+a{
+  text-decoration: none;
+  color: hsl( 0, 0%, 0%);
+  margin-left: 1rem;
+}
+.centrado{
+  width: 95%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+strong{
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-family: 'Almendra', serif;
+  font-size: 1.5rem;
+}
+span:last-child{
+  color: hsl(0, 0%, 40%);
+}
+/*                                HEADER                              */
+
+#banner, #headlogo{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+#headlogo img{
+  height: 2rem;
+}
+header{
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+/*                           CONTENT                                 */
+.content{
+  width: 100%;
+}
+.grray{
+  background-color: hsl(0, 0%, 60%);
+}
+.contenido{
+  display: flex;
+}
+/*                           FIRST PART                                   */
+.unapar img{
+  height: 60%;
+  width: 60%;
+  margin: 2rem 1.5rem 2rem 0;
+}
+
+.unapar{
+  align-items: center;
+}
+#learn p{
+  margin: 2rem 0;
+}
