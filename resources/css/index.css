@@ -25,7 +25,7 @@ strong{
   color: hsl(0, 0%, 0%);
 }
 h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2{
   font-family: 'Almendra', serif;
@@ -62,8 +62,8 @@ header{
 }
 /*                           FIRST PART                                   */
 .unapar img{
-  height: 60%;
   width: 60%;
+  height: auto%;
   margin: 2rem 1.5rem 2rem 0;
   border-radius: .2rem;
 }
@@ -73,33 +73,90 @@ header{
 }
 
 #learn{
-  width: 30%;
+  width: 35%;
 }
-#learn p{
-  margin: 4rem 0;
 
+#learn p{
+  margin: 3rem 0;
 }
+
 #learn span a{
-  display: inline-block;
+    display: inline-block;
     color: hsl(0, 0%, 100%);
     margin-left: 0;
     padding: 1rem 0;
     width: 100%;
 }
+
 #learn span{
   text-align: center;
   display: inline-block;
   width: 100%;
   background-color:hsl(0, 0%, 40%);
-  transition: background-color .2s linear 0s, box-shadow .05s linear 0s;
+  transition: background-color .2s linear 0s, box-shadow .04s linear 0s;
   border-radius: .2rem;
-    box-shadow: 2px 3px 5px hsl(0, 0%, 20%);
+  box-shadow: 2px 3px 5px hsl(0, 0%, 20%);
 }
-#learn span:hover{
-  background-color: hsl(0, 0%, 40%);
 
+#learn span:hover{
+  background-color: hsl(0, 0%, 45%);
 }
+
 #learn span:active{
   background-color:hsl(0, 0%, 40%);
   box-shadow: none;
+}
+/*                   SECOND PART                        */
+/* IZQUIERDA */
+.izquierda{
+  width: 60%;
+  border-right: 1px solid hsl(0, 0%, 60%);
+  padding-right: 1.5rem;
+}
+.izquierda img{
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 2rem 0;
+  border-radius: .2rem;
+}
+.izquierda .otherside{
+  margin: 2rem 0;
+}
+
+/* DERECHA */
+.derecha{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.minitext{
+  margin-left: 1rem;
+}
+.mininota{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+  margin: 0.1rem 0;
+  border-top: 1px solid hsl(0, 0%, 60%);
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+  transition: all 0.2s linear 0s;
+}
+.mininota:hover{
+  background-color:hsl(0, 0%, 60%);
+}
+.mininota img{
+  width: 35%;
+  height: auto;
+  margin-left: 1rem;
+}
+.minitext a{
+  padding: 0;
+  margin: 0;
+  color: hsl(240, 100%, 40%);
+  font-size: 0.75rem;
+}
+.minitext .otherside{
+font-size: 0.75rem;
+margin: 1rem 0;
 }
