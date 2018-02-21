@@ -55,7 +55,7 @@ header{
   width: 100%;
 }
 .grray{
-  background-color: hsl(0, 0%, 60%);
+  background-color: hsl(0, 0%, 70%);
 }
 .contenido{
   display: flex;
@@ -143,7 +143,7 @@ header{
   transition: all 0.2s linear 0s;
 }
 .mininota:hover{
-  background-color:hsl(0, 0%, 60%);
+  background-color:hsl(240, 50%, 80%);
 }
 .mininota img{
   width: 35%;
@@ -151,12 +151,130 @@ header{
   margin-left: 1rem;
 }
 .minitext a{
-  padding: 0;
+  padding: 0;s
   margin: 0;
   color: hsl(240, 100%, 40%);
   font-size: 0.75rem;
 }
-.minitext .otherside{
+.minitext a:hover{
+font-family: 'Cabin', sans-serif;
+}
+.otherside{
 font-size: 0.75rem;
 margin: 1rem 0;
 }
+/*                       THIRD PART               */
+#remolacha{
+  margin: 2rem auto;
+  text-align: center;
+}
+#courses{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.course{
+display:flex;
+flex-direction: column;
+width: 30%;
+background-color: hsl(0, 0%, 100%);
+margin-bottom: 2rem;
+transition: all 0.5s ease 0s;
+
+}
+.course p{
+  margin-left: 0.75rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease 0s;
+}
+.course:hover{
+  opacity: 0.5;
+  background-color: hsl(240, 50%, 40%);
+}
+.course:hover p{
+  color: hsl(0, 0%, 100%);
+}
+.course .otherside{
+  padding-bottom: 2rem;
+}
+/* practice */
+/* practice */
+/* practice */
+/* practice */
+.sidebar {
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  border-radius: 0.5rem;
+  right: 0;
+  width: 28rem;
+}
+.side img{
+  width: 3rem;
+  padding-right: 3rem;
+}
+.side{
+  margin: 0;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.siderow{
+  background-color:hsl(120, 100%, 90%);
+  position: relative;
+  right: -25rem;
+  position: relative;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  font-size: 2rem;
+  transition: all 0.3s ease 0s;
+  width: auto;
+}
+.info{
+  border-top: 1px solid black;
+  border-bottom:  1px solid black;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.side span{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.side span a{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.abajo:hover{
+  background-color:hsl(180, 100%, 93%);
+  right: 0rem;
+}
+.abajo:hover img{
+  display: none;
+}
+.medio:hover{
+  background-color:hsl(180, 100%, 93%);
+  right: 0rem;
+}
+.medio:hover img{
+  display: none;
+}
+.arriba:hover{
+  background-color:hsl(180, 100%, 93%);
+  right: 0rem;
+}
+.arriba:hover img{
+  display: none;
+}
+
+/* practice */
