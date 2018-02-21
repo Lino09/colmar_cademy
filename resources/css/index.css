@@ -8,6 +8,7 @@ html{
 a{
   text-decoration: none;
   color: hsl( 0, 0%, 0%);
+  margin-left: 20px;
   margin-left: 1rem;
    outline: 0;
 
@@ -25,10 +26,12 @@ strong{
   color: hsl(0, 0%, 0%);
 }
 h1{
+  font-size: 50px;
   font-size: 2.5rem;
 }
 h2{
   font-family: 'Almendra', serif;
+  font-size: 30px;
   font-size: 1.5rem;
 }
 span:last-child{
@@ -37,18 +40,31 @@ span:last-child{
 /*                                HEADER                              */
 
 #banner, #headlogo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 #headlogo img{
+  height: 40px;
   height: 2rem;
 }
 header{
+  height: 80px;
   height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*                           CONTENT                                 */
 .content{
@@ -58,18 +74,24 @@ header{
   background-color: hsl(0, 0%, 70%);
 }
 .contenido{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 /*                           FIRST PART                                   */
 .unapar img{
   width: 60%;
   height: auto%;
+  margin: 40px 30px 40px 0;
   margin: 2rem 1.5rem 2rem 0;
   border-radius: .2rem;
 }
 
 .unapar{
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 
 #learn{
@@ -77,6 +99,7 @@ header{
 }
 
 #learn p{
+  margin: 60px 0;
   margin: 3rem 0;
 }
 
@@ -84,6 +107,7 @@ header{
     display: inline-block;
     color: hsl(0, 0%, 100%);
     margin-left: 0;
+    padding: 20px 0;
     padding: 1rem 0;
     width: 100%;
 }
@@ -93,6 +117,7 @@ header{
   display: inline-block;
   width: 100%;
   background-color:hsl(0, 0%, 40%);
+  -webkit-transition: background-color .2s linear 0s, box-shadow .04s linear 0s;
   transition: background-color .2s linear 0s, box-shadow .04s linear 0s;
   border-radius: .2rem;
   box-shadow: 2px 3px 5px hsl(0, 0%, 20%);
@@ -111,35 +136,52 @@ header{
 .izquierda{
   width: 60%;
   border-right: 1px solid hsl(0, 0%, 60%);
+  padding-right: 30px;
   padding-right: 1.5rem;
 }
 .izquierda img{
   width: 100%;
   height: auto;
+  margin: 40px 0 40px 0;
   margin: 2rem 0 2rem 0;
   border-radius: .2rem;
 }
 .izquierda .otherside{
+  margin: 40px 0;
   margin: 2rem 0;
 }
 
 /* DERECHA */
 .derecha{
+  margin-top: 40px;
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .minitext{
+  margin-left: 20px;
   margin-left: 1rem;
 }
 .mininota{
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
   padding: .5rem 0;
+  margin: 2px 0;
   margin: 0.1rem 0;
   border-top: 1px solid hsl(0, 0%, 60%);
   border-bottom: 1px solid hsl(0, 0%, 60%);
+  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
 .mininota:hover{
@@ -148,55 +190,77 @@ header{
 .mininota img{
   width: 35%;
   height: auto;
+  margin-left: 20px;
   margin-left: 1rem;
 }
 .minitext a{
   padding: 0;s
   margin: 0;
   color: hsl(240, 100%, 40%);
+  font-size: 15px;
   font-size: 0.75rem;
 }
 .minitext a:hover{
 font-family: 'Cabin', sans-serif;
 }
 .otherside{
+font-size: 15px;
 font-size: 0.75rem;
+margin: 20px 0;
 margin: 1rem 0;
 }
 /*                       THIRD PART               */
 #remolacha{
+  margin: 40px auto;
   margin: 2rem auto;
   text-align: center;
 }
 #courses{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .course{
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 width: 30%;
 background-color: hsl(0, 0%, 100%);
+margin-bottom: 40px;
 margin-bottom: 2rem;
+-webkit-transition: all 0.5s ease 0s;
 transition: all 0.5s ease 0s;
 
 }
 .course p{
+  margin-left: 15px;
   margin-left: 0.75rem;
+  margin-top: 20px;
   margin-top: 1rem;
+  -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 .course:hover{
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   background-color: hsl(240, 50%, 40%);
 }
 .course:hover p{
   color: hsl(0, 0%, 100%);
 }
 .course .otherside{
+  padding-bottom: 40px;
   padding-bottom: 2rem;
 }
 /* practice */
@@ -204,41 +268,63 @@ transition: all 0.5s ease 0s;
 /* practice */
 /* practice */
 .sidebar {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 40%;
   border-radius: 0.5rem;
   right: 0;
+  width: 560px;
   width: 28rem;
 }
 .side img{
+  width: 60px;
   width: 3rem;
+  padding-right: 60px;
   padding-right: 3rem;
 }
 .side{
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding: 10px;
   padding: 0.5rem;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 10px;
   border-top-left-radius: .5rem;
+  border-bottom-left-radius: 10px;
   border-bottom-left-radius: .5rem;
 }
 .siderow{
   background-color:hsl(120, 100%, 90%);
   position: relative;
+  right: -500px;
   right: -25rem;
   position: relative;
+  border-top-left-radius: 10px;
   border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 10px;
   border-bottom-left-radius: 0.5rem;
+  font-size: 40px;
   font-size: 2rem;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: auto;
 }
 .info{
   border-top: 1px solid black;
   border-bottom:  1px solid black;
+  border-top-left-radius: 10px;
   border-top-left-radius: .5rem;
+  border-bottom-left-radius: 10px;
   border-bottom-left-radius: .5rem;
 }
 .side span{
@@ -257,6 +343,7 @@ transition: all 0.5s ease 0s;
 }
 .abajo:hover{
   background-color:hsl(180, 100%, 93%);
+  right: 0px;
   right: 0rem;
 }
 .abajo:hover img{
@@ -264,6 +351,7 @@ transition: all 0.5s ease 0s;
 }
 .medio:hover{
   background-color:hsl(180, 100%, 93%);
+  right: 0px;
   right: 0rem;
 }
 .medio:hover img{
@@ -271,6 +359,7 @@ transition: all 0.5s ease 0s;
 }
 .arriba:hover{
   background-color:hsl(180, 100%, 93%);
+  right: 0px;
   right: 0rem;
 }
 .arriba:hover img{
