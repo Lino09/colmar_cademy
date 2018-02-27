@@ -11,7 +11,9 @@ a{
   margin-left: 20px;
   margin-left: 1rem;
    outline: 0;
-
+}
+.ninjapic{
+  display: none;
 }
 .headnav span:hover a{
   color: hsl(0, 0%, 60%);
@@ -295,9 +297,66 @@ footer{
   display: flex;
   justify-content: space-between;
 }
+/* MEDIA QUERIES SECTION */
 
-
-
+@media only screen and (max-width: 1024px){
+  .samurai{
+    display: none;
+  }
+  .headnav, #headlogo span, .course img, .course .otherside{
+    display: none;
+  }
+  .ninjapic{
+    display: inline-block;
+  }
+  #headlogo{
+    justify-content: space-around;
+  }
+  .unapar{
+    flex-direction: column;
+  }
+  #learn{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  #infos .centrado .contenido .izquierda{
+display: none;
+  }
+  .mininota{
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+  .derecha{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .mininota img{
+    width: 80%;
+  }
+  .course{
+  font-size: 1.75rem;
+  width: 100%;
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  margin: .2rem;
+  padding: 1rem 0;
+  text-align: center;
+  }
+  #third{
+    padding-bottom: 2rem;
+  }
+  #rowing .derecha{
+    display: none;
+  }
+  #rowing .izquierda{
+    width: 100%;
+  }
+  .graycolor span{
+    display: none;
+  }
+}
 
 
 
