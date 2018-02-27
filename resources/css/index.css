@@ -356,6 +356,10 @@ display: none;
   .graycolor span{
     display: none;
   }
+  .izquierda{
+    margin: 0;
+    padding: 0;
+  }
 }
 
 
