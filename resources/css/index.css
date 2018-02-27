@@ -68,6 +68,7 @@ header{
     height: 4rem;
     background-color: white;
     position: fixed;
+    border-bottom: 1px solid hsl(0, 0%, 60%);
     top: 0;
     z-index: 3;
   }
@@ -269,6 +270,40 @@ transition: all 0.5s ease 0s;
   padding-bottom: 40px;
   padding-bottom: 2rem;
 }
+/* FOURTH PART */
+#rowing{
+  display: flex;
+}
+#thesis {
+  text-align: center;
+  margin: 50px 0;
+  margin: 2.5rem 0;
+}
+.izquierda video{
+  margin-bottom: 3rem;
+}
+#fourthpart div{
+  border: none;
+}
+/* FOOTER */
+footer{
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(0, 0%, 60%);
+}
+#footah{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
 /* practice */
 /* practice */
 /* practice */
@@ -373,5 +408,4 @@ transition: all 0.5s ease 0s;
   display: none;
 } */
 /* practice */
-
 /* Maaahn that was hard and i wasnt convinced */
